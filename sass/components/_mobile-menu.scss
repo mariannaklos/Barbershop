@@ -1,0 +1,70 @@
+.menu-container {
+  @include media(767px, max-width) {
+    width: 72%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 118px 49px;
+
+    background-color: $primaryBgdColor;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04),
+      -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
+
+    transform: translateX(100%);
+    @include transitioned(transform);
+
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+  @include media(768px) {
+    position: static;
+    display: flex;
+
+    background-color: transparent;
+  }
+  @include media(1200px) {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+  }
+}
+
+.menu-btn {
+  @include centeredFlex;
+  margin-left: auto;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  &__icon--cross {
+    fill: $primaryTextColor;
+  }
+  &__icon--menu {
+    fill: $lightTitleBtnColor;
+  }
+  &.is-open {
+    position: relative;
+    z-index: 10;
+  }
+  &.is-open .menu-btn__icon--menu {
+    display: none;
+  }
+
+  @include media(768px) {
+    display: none;
+  }
+}
+
+.menu-btn__icon--cross {
+  display: none;
+
+  .menu-btn.is-open & {
+    display: block;
+  }
+}

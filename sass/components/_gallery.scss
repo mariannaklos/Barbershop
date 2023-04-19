@@ -1,0 +1,38 @@
+.gallery {
+  @extend %section;
+}
+
+.gallery__pre-title--primary {
+  @extend %pre-title;
+
+  color: $primaryTextColor;
+  margin-bottom: 44px;
+}
+
+.gallery__list {
+  @extend %list;
+  margin: -15px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  @include media(767px, max-width) {
+    width: 100%;
+    margin: 15px;
+  }
+  @include media(768px) {
+    width: calc((100% - 30px - 30px) / 2);
+    margin: 15px;
+  }
+  @include media(1200px) {
+    width: calc((100% - 3 * 30px - 30px) / 4);
+    margin: 15px;
+  }
+}
+
+.gallery__img {
+  @extend %img;
+  max-width: 100%;
+}

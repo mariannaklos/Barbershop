@@ -1,0 +1,36 @@
+.benefits {
+  @extend %section;
+  @include media(1200px) {
+    padding-top: 121px;
+  }
+}
+
+.benefits__container {
+  display: flex;
+  @include media(1199px, max-width) {
+    flex-direction: column-reverse;
+  }
+}
+
+.benefits__pre-title--primary {
+  @extend %pre-title;
+  color: $primaryTextColor;
+}
+
+.benefits__title--primary {
+  @extend %section-title;
+
+  color: $primaryTextColor;
+
+  //   width: 483px;
+}
+
+.benefits__after-title--secondary {
+  @extend %after-title;
+  margin-bottom: 44px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: $secondaryTextColor;
+  // width: 500px;
+}

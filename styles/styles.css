@@ -1,0 +1,240 @@
+:root {
+  --primary-text-color: #303030;
+  --secondary-text-color: #555555;
+  --first-title-btn-color: #ffffff;
+
+  --transparent-text-color-hero: rgba(157, 164, 189, 0.6);
+  --transparent-text-color-input: rgba(157, 164, 189, 0.4);
+  --grey-text-color: #9da4bd;
+
+  --booking-section-bgd-color: #191c26;
+
+  --accent-color: #ff6c00;
+}
+
+/* .page {
+  margin: 0;
+  color: var(--primary-text-color);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em; 
+}*/
+
+
+/* link styles */
+/* .link { */
+  /* text-decoration: none;
+  color: inherit; 
+}*/
+
+
+/* list styles */
+/* .list {
+  list-style: none;
+  padding-left: 0;
+} */
+
+/* button style */
+/* .button {
+  min-width: 160px;
+  height: 40px;
+
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: inherit;
+
+  border: 1px solid var(--accent-color);
+  background-color: transparent;
+  border-radius: 25px;
+  cursor: pointer;
+} */
+
+.button.first {
+  color: var(--first-title-btn-color);
+}
+
+.link-social {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+/* section title styles */
+/* .section-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700; - за умовчуванням у заголовків
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+} */
+
+.section-title.first {
+  color: var(--first-title-btn-color);
+}
+
+/* .container {
+  margin: 0 auto;
+  width: 1238px;
+  padding: 0 19px;
+  outline: 1px solid red;
+} */
+
+/*------------ Header section ------------*/
+/* .header {
+  background-color: #757575;
+} */
+
+/* .header .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+} */
+/* 
+.logo {
+  display: block;
+  width: 66px;
+  height: 55px;
+  margin-right: 70px;
+} */
+
+/* .nav {
+  display: flex;
+} */
+/* 
+.main-nav.list {
+  display: flex;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--first-title-btn-color);
+} */
+/* 
+.main-nav > .item:not(:last-child) {
+  margin-right: 40px;
+} */
+/* 
+.main-nav .link:hover,
+.main-nav .link:focus {
+  color: var(--accent-color);
+} */
+
+.conect-container {
+  margin-left: auto;
+}
+
+.tel.link {
+  margin-right: 40px;
+
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--first-title-btn-color);
+}
+
+/*----------- HERO SECTION -----------*/
+
+.hero-title {
+  font-size: 72px;
+  line-height: 1.18;
+}
+
+.hero-nav .link {
+  color: var(--white-text-color);
+}
+
+.hero .link:hover,
+.hero .link:focus {
+  color: var(--accent-color);
+}
+
+.top-title {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--transparent-text-color-hero);
+}
+
+.top-title.second {
+  color: inherit;
+}
+
+.bottom-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.unique-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+/* Price list section */
+.price.list {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+}
+
+/* Masters section */
+.masters .name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+}
+
+.masters .proffession {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* Gallery section */
+
+/* Booking section */
+.booking,
+.contacts {
+  background-color: var(--booking-section-bgd-color);
+}
+
+/* Contacts section */
+.contacts .address {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+}
+
+.top-title.schedule {
+  color: var(--first-title-btn-color);
+}
+
+.bottom-title.schedule {
+  color: var(--grey-text-color);
+}
+
+/* Footer section */
+.copyright {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--grey-text-color);
+}
+
+.footer .link-social {
+  color: var(--grey-text-color);
+}

@@ -1,0 +1,123 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+  overflow: visible;
+
+  @include media(767px, max-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @include media(768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__contacts {
+  @include media(768px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  @include media(1200px) {
+    flex-direction: row;
+    margin-left: auto;
+  }
+}
+
+.header__tel {
+  display: block;
+
+  transform: scale(1);
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    transform: scale(1.2);
+  }
+
+  @include media(767px, max-width) {
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+
+    color: $primaryTextColor;
+  }
+  @include media(768px) {
+    font-size: 12px;
+    line-height: 1.33;
+    color: $lightTitleBtnColor;
+  }
+  @include media(1200px) {
+    margin-right: 40px;
+
+    font-size: 12px;
+    line-height: 1.33;
+  }
+}
+
+.header__btn {
+  @extend %btn;
+  @include media(767px, max-width) {
+    width: 194px;
+    margin-bottom: 64px;
+    color: $primaryTextColor;
+  }
+  @include media(768px) {
+    margin-bottom: 20px;
+    color: $lightTitleBtnColor;
+  }
+  @include media(1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.nav {
+  @include media(768px) {
+    margin-right: 47px;
+  }
+  @include media(1200px) {
+    margin-right: 0;
+  }
+}
+
+// .header__contacts {
+//     margin-left: auto;
+//     @include centeredFlex;
+// }
+
+// .header__tel {
+//     margin-right: 40px;
+//     padding-top: 15px;
+//     padding-bottom: 15px;
+
+//     font-size: 12px;
+//     line-height: 1.33;
+//     letter-spacing: 0.1em;
+//     color: $lightTitleBtnColor;
+//     transform: scale(1);
+
+//     transition: transform 300ms ease-in-out, color 300ms ease-in-out;
+
+//     &:hover,
+//     &:focus {
+//         color: $accentColor;
+//         transform: scale(1.2);
+//     }
+// }
+
+// .header__btn {
+//     margin-right: 8px;
+// }

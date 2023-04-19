@@ -1,0 +1,10 @@
+.hero__container {
+  @include media(767px, max-width) {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  @include media(768px) {
+    display: flex;
+  }
+}

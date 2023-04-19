@@ -1,0 +1,37 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/container";
+@import "./utils/placeholders";
+@import "./base/normalize";
+
+@import "./components/page";
+@import "./components/header";
+@import "./components/commons/backdrop";
+@import "./components/mobile-menu";
+@import "./components/commons/logo";
+@import "./components/main-nav";
+@import "./components/commons/btn";
+
+@import "./components/hero";
+@import "./components/commons/company-socials__wrap";
+@import "./components/hero-content";
+
+@import "./components/about-us";
+
+@import "./components/prices";
+@import "./components/prices_wrap";
+
+@import "./components/benefits";
+@import "./components/achievements";
+
+@import "./components/masters";
+@import "./components/masters__socials";
+
+@import "./components/gallery";
+
+@import "./components/booking";
+@import "./components/contacts";
+
+@import "./components/footer";
+@import "./components/slider";
+@import "./components/modal";
